@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	/*line-height: 1;*/
 }
 ol, ul {
 	list-style: none;
@@ -51,7 +51,71 @@ table {
 /* Start custom CSS */
 /* Base */
 /* Simple, HTML/element selectors */
-/* Typographic styles; colors; spacing (above and below)
+/* Typographic styles; colors; spacing (above and below) */
+html {
+	font-size: 1.125em;
+	line-height: 1.22222em;
+	text-rendering: optimizeLegibility;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+h1, h2, h3, p, ul{
+	padding-bottom: 1.2222em;
+}
+p{
+	background-color: grey
+}
+ul, ol {
+	padding-left: 1.2222em;
+
+}
+ul {
+	list-style-type: circle;
+	list-style-position: inside;
+	/*list-style-image: url(https://pbs.twimg.com/profile_images/378800000511259240/647da7057c38ef21e42eb29971163ab4_400x400.jpeg);*/
+}
+ol{
+	list-style: decimal;
+	list-style-position: inside;
+}
+li{
+	padding-bottom: 0.6111em;
+}
+li li:last-child{
+	padding-bottom: 0em;
+}
+li > ol, li > ul{
+	padding-left: 1.2222em;
+	padding-bottom: 0em;
+	padding-top: 0.6111em;
+}
+/*Layouts*/
+body{
+	padding-top: 1.2222em;
+}
+
+#navigation ul{
+	list-style: none;
+	position: absolute;
+	padding-left: 0;
+	top: 0;
+	width: 100%;
+	left: 0;
+}
+#navigation li {
+	float: left;
+	width: 33.3333%;
+}
+#navigation a{
+	display: block;
+	padding-top: 0.6111em;
+	padding-bottom: 0.6111em;
+	text-align: center;
+	text-decoration: none;
+	background-color: orange;
+}
 
 /* Modular Styles */
 /*
