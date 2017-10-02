@@ -65,7 +65,6 @@ h1, h2, h3, p, ul{
 	padding-bottom: 1.2222em;
 }
 p{
-	background-color: grey
 }
 ul, ol {
 	padding-left: 1.2222em;
@@ -93,16 +92,19 @@ li > ol, li > ul{
 }
 /*Layouts*/
 body{
-	padding-top: 1.2222em;
+}
+
+nav{
+	padding: 0;
 }
 
 #navigation ul{
 	list-style: none;
-	position: absolute;
-	padding-left: 0;
-	top: 0;
+	position:relative;
+	padding: 0;
+	/*top: 0;*/
 	width: 100%;
-	left: 0;
+	/*left: 0;*/
 }
 #navigation li {
 	float: left;
@@ -114,7 +116,12 @@ body{
 	padding-bottom: 0.6111em;
 	text-align: center;
 	text-decoration: none;
-	background-color: orange;
+	background-color: #32302F;
+	color: #DEDEDD;
+}
+#navigation a:hover{
+	color: #5F5F5F;
+
 }
 
 /* Modular Styles */
@@ -122,6 +129,46 @@ body{
   Class selectors, sometimes descendent/child selectors,
 	repeating styles throughout a site/page
 */
+#primary section{
+	color: white;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-blend-mode:multiply;
+	background-position: center center;
+	background-size:cover;
+	padding: 0;
+	height: 100vh;
+}
+
+#sec1{
+	background:url("background1.jpg");
+	background-color: grey;
+
+}
+#primary h1{
+	color: white;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+#sec1 h1{
+	font-size: 2em;
+	height: 20%;
+	width: 20%;
+	top: 40%;
+}
+#sec2{
+	background:url("background2.jpg");
+	background-color: grey;
+	/*background-position:bottom;*/
+}
+#sec2 h1{
+	font-size: 2em;
+	height: 20%;
+	width: 100%;
+	top: 20%;
+}
 
 /* State Styles */
 /* JavaScipt or meia-query dependent styles */
