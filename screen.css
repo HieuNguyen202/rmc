@@ -152,8 +152,8 @@ nav{
 
 
 #sec1{
-	background:url("background1.jpg");
-	background-color: grey;
+	background:url("vietnam.jpg");
+	background-color: none;
 
 }
 #primary h1 p{
@@ -250,7 +250,6 @@ nav{
 	background-size:cover;
 	padding: 0;
 }
-
 
 #sec5{
 	background-color: none;
