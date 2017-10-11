@@ -75,44 +75,23 @@ img{
 /*
   Class selectors, sometimes descendent/child selectors,
 	repeating styles throughout a site/page*/
-
 body section{
 	clear: both;
+}
+#time figure{
 	height: 100vh;
+
+}
+#time figure img, #time figure figcaption{
+	float: left;
+	width: 100%;
 }
 
 #food figure{
 	float: left;
-	width: 50%;
-	height: auto;
-}
-#location{
-	float: left;
-	width: 100%;
-}
-#desciption{
-	float: right;
-	width: 50%;
-	height: 100%;
+	width: 25%;
 }
 
-#lunch #location{
-	float: right;
-}
-#lunch #desciption{
-	float: left;
-}
-
-#pho #location{
-	width: 100%;
-}
-#pho #desciption{
-	float: left;
-}
-#fishsauce article{
-	width: 100%;
-	float: left;
-}
 /* State Styles */
 /* JavaScipt or meia-query dependent styles */
 
