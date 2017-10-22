@@ -90,8 +90,6 @@ h1{
 /*
   Class selectors, sometimes descendent/child selectors,
 	repeating styles throughout a site/page*/
-<<<<<<< HEAD
-
 
 header figure{
 	float:left;
@@ -103,15 +101,11 @@ body section{
 	padding: 1.2222em;
 	margin-bottom: 1.2222em;
 	border-radius: 25px;
-=======
-body section{
-	clear: both;
->>>>>>> 2454f51e180fbd8dcce281992e25cb6c41bcd685
 }
 #time figure{
 	height: 100vh;
+}
 
-<<<<<<< HEAD
 body section figure	{
 	padding-bottom: 1.2222em;
 }
@@ -193,21 +187,6 @@ body section figure img	{
 		float: right;
 	}
 }
-
-
-=======
-}
-#time figure img, #time figure figcaption{
-	float: left;
-	width: 100%;
-}
-
-#food figure{
-	float: left;
-	width: 25%;
-}
-
->>>>>>> 2454f51e180fbd8dcce281992e25cb6c41bcd685
 /* State Styles */
 /* JavaScipt or meia-query dependent styles */
 
