@@ -54,19 +54,34 @@ table {
 /* Simple, HTML/element selectors */
 /* Typographic styles; colors; spacing (above and below) */
 html {
-	font-size: 1.125em;
-	line-height: 1.22222em;
+	font-size: 1.125em; /*18px / 16px = 1.125*/
 	text-rendering: optimizeLegibility;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%;
 }
+
+body{
+	line-height: 1.22222em; /*22px / 18px = 1.22222*/
+	background-color: white;
+}
+
 img{
 	width: 100%;
 	max-width: 100%;
 	display: block;
 	text-align: center;
+}
+p{
+	text-indent: 1.2222em;
+}
+
+h1{
+	font-size: 1.333em; /* using ratio perfect fourth 23.994px/18 = 1.333em*/
+	padding-bottom: 0.918810558em; /*22px/23.994px = 0.918810558em*/
+	text-align: center;
+	color: blue;
 }
 
 /*Layouts*/
@@ -76,43 +91,102 @@ img{
   Class selectors, sometimes descendent/child selectors,
 	repeating styles throughout a site/page*/
 
+
+header figure{
+	float:left;
+	width: 50%;
+}
+
 body section{
 	clear: both;
+	padding: 1.2222em;
+	margin-bottom: 1.2222em;
+	border-radius: 25px;
+}
+
+body section figure	{
+	padding-bottom: 1.2222em;
+}
+
+body section figure img	{
+	border-radius: 25px;
+}
+
+.left{
+	background-color: orange;
+	margin-right: 1.2222em;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.right{
+	background-color: orange;
+	margin-left: 1.2222em;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+
+
+#menu figure {
+	position: relative;
+	float: left;
+	width: 150px;
+	padding: 10px;
+	background-color: orange;
+	border-radius: 15px;
+}
+
+#menu p{
+	position: relative;
+	top:35px;
+	background-color: orange;
+	border-radius: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 150px;
+	line-height: 50px;
+}
+
+#intro{
 	height: 100vh;
+	text-align: center;
 }
 
-#food figure{
-	float: left;
-	width: 50%;
-	height: auto;
-}
-#location{
-	float: left;
-	width: 100%;
-}
-#desciption{
-	float: right;
-	width: 50%;
-	height: 100%;
+#intro p{
+	/*height: 100%;*/
+  position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-indent: 0;
 }
 
-#lunch #location{
-	float: right;
-}
-#lunch #desciption{
-	float: left;
+
+@media screen and (min-width: 1000px){
+	header figure{
+		width: 25%;
+	}
+	body section{
+		height: 30vw;
+	}
+
+	body section figure, body section article{
+		width: 40%;
+		float: left;
+	}
+	body section article{
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 50%;
+		float: left;
+	}
+	.right figure{
+		float: right;
+	}
 }
 
-#pho #location{
-	width: 100%;
-}
-#pho #desciption{
-	float: left;
-}
-#fishsauce article{
-	width: 100%;
-	float: left;
-}
+
 /* State Styles */
 /* JavaScipt or meia-query dependent styles */
 
