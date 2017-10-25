@@ -128,26 +128,24 @@ body section figure img	{
 	border-bottom-right-radius: 0;
 }
 
-
-
-#menu figure {
-	position: relative;
-	float: left;
-	width: 150px;
-	padding: 10px;
-	background-color: orange;
-	border-radius: 15px;
+#menu{
+	margin:1em;
 }
 
-#menu p{
-	position: relative;
-	top:35px;
-	background-color: orange;
-	border-radius: 25px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	padding-left: 150px;
-	line-height: 50px;
+#menu figure {
+	float: left;
+	width: 40%;
+	text-align: center;
+	margin: 5%;
+}
+
+#menu figure figcaption{
+	padding-top: 1.2222em;
+
+}
+
+#menu img{
+	border-radius: 50%;
 }
 
 #intro{
