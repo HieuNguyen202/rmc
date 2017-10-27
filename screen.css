@@ -54,7 +54,7 @@ table {
 /* Typographic styles; colors; spacing (above and below) */
 html {
 	font-size: 1.125em; /*18px / 16px = 1.125*/
-	text-rendering: optimizeLegibility;
+	text-rendering:optimizeLegibility;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -140,8 +140,7 @@ body section figure img	{
 	height: 100vh;
 	text-align: center;
 	margin-left: 1.2222em;
-	margin-ri
-	ght: 1.2222em;
+	margin-right: 1.2222em;
 }
 #intro h2{
   position: relative;
@@ -240,5 +239,5 @@ body section figure img	{
 	.flexbox .right{
 		flex-direction:row-reverse;
 	}
-
+}
 /* Responsive Images */
