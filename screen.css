@@ -104,140 +104,45 @@ body section figure img	{
 /*
   Class selectors, sometimes descendent/child selectors,
 	repeating styles throughout a site/page*/
-.tab{
-	padding: 1.2222em;
-	margin-bottom: 1.2222em;
-	border-radius: 25px;
-}
 
-.tab p{
-	text-indent: 1.2222em;
-}
-
-/*to anchor tab left*/
-.left{
-	background-color: #C63D0F;
-	margin-right: 10%;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-}
-
-/*to anchor tab right*/
-.right{
-	background-color: #C63D0F;
-	margin-left: 10%;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-
-#heaven figure{
-	float:left;
-	display: inline;
-	width: 50%;
-}
-
-#intro{
-	height: 100vh;
-	text-align: center;
-	margin-left: 1.2222em;
-	margin-right: 1.2222em;
-}
-#intro h2{
-  position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-}
-
-#when h2{
-	clear: both;
-}
-#when section figure{
-	padding-bottom: 1.2222em;
-}
-
-#items figure {
+#gallery li {
 	float: left;
 	width: 40%;
 	text-align: center;
-	margin-left: 5%;
+	/*margin-left: 5%;
 	margin-right: 5%;
 	margin-bottom: 2.5vw;
-	margin-top: 2.5vw;
+	margin-top: 2.5vw;*/
 }
-#items figure img{
+#gallery li figure img{
 	border-radius: 50%;
 }
-#items figure figcaption h1{
+#gallery li figure figcaption h1{
 	 color: #C63D0F; /*orange brown*/
 	 padding-top: 0.8148em; /* 22px/27px = 0.8148*/
 	 padding-bottom: 0;
  }
 
 /* State Styles */
-.flexbox #items,
-.flexbox #heaven {
+.flexbox #gallery,{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.flexbox #items figure,
-.flexbox #heaven figure {
+.flexbox #gallery li figure{
 	float: none;
   }
 
 /* JavaScipt or meia-query dependent styles */
 @media screen and (min-width: 600px){
-	.left{
-		margin-right: 30%;
-	}
-	.right{
-		margin-left: 30%;
-	}
-	#heaven figure{
-		width: 33.3333%;
-	}
-	#items figure {
+	#gallery li {
 		width: 23.3333%; /*(100% - 6*5% of margin) / 3 = 23.3333*/
 	}
 }
 @media screen and (min-width: 900px){
-	.left{
-		margin-right: 40%;
-	}
-	.right{
-		margin-left: 40%;
-	}
-	#heaven figure{
-		width: 25%;
-	}
-	#items figure {
+	#gallery li {
 			width: 15%; /*(100% - 8*5% of margin) / 4 = 15*/
 		}
-}
-@media screen and (min-width: 950px){
-	.flexbox .left{
-		margin-right: 10%;
-	}
-	.flexbox .right{
-		margin-left: 10%;
-	}
-	.flexbox .tab {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		padding-bottom: 0;
-	}
-	.flexbox .tab article,
-	.flexbox .tab figure{
-		width: 45%;
-	  }
-	.flexbox .tab article{
-		padding-bottom: 1.2222em;
-		}
-	.flexbox .right{
-		flex-direction:row-reverse;
-	}
 }
 /* Responsive Images */
