@@ -63,20 +63,18 @@ html {
 body{
 	font-family: 'Cuprum', sans-serif;
 	line-height: 1.22222em; /*22px / 18px = 1.22222*/
-	background-color: white;
+	background-color: grey;
 }
 img{
 	display: block;
 	width: 100%;
 	max-width: 100%;
-	text-align: center;
 }
 
 h1{
 	font-family: 'Lobster', cursive;
 	font-size: 1.5em; /* 27px / 18px = 1.5(Ratio perfect fifth)*/
 	padding-bottom: 0.8148em; /*22px / 27px = 0.8148*/
-	text-align: center;
 	color: #f3e800; /*yellow*/
 
 }
@@ -96,53 +94,71 @@ body section{
 	color: #FDF3E7;
 }
 
-body section figure img	{
-	border-radius: 25px;
-}
 
 /* Modular Styles */
 /*
   Class selectors, sometimes descendent/child selectors,
 	repeating styles throughout a site/page*/
 
+#gallery{
+	margin: 1vw; /* 5.5px/27px = 0.2037*/
+}
+
 #gallery li {
 	float: left;
-	width: 40%;
-	text-align: center;
-	/*margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 2.5vw;
-	margin-top: 2.5vw;*/
+	margin: 1vw; /* 5.5px/27px = 0.2037*/
+	background-color: white;
+	border-bottom: 10px orange solid;
 }
-#gallery li figure img{
-	border-radius: 50%;
+
+#gallery li figure{
+
 }
+
+#gallery li figure a img{
+	transition: .1s ease;
+}
+#gallery li figure a img:hover{
+	padding: 1%; /*Pressed animation*/
+	max-width: 98%; /*Pressed animation*/
+}
+#gallery li figure a img:active{
+	padding: 5%; /*Pressed animation*/
+	max-width: 90%; /*Pressed animation*/
+}
+
 #gallery li figure figcaption h1{
 	 color: #C63D0F; /*orange brown*/
 	 padding-top: 0.8148em; /* 22px/27px = 0.8148*/
-	 padding-bottom: 0;
+	 padding-bottom: 0.4074em; /* 11px/27px = 0.4074*/
  }
 
 /* State Styles */
-.flexbox #gallery,{
+.flexbox #gallery{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
 .flexbox #gallery li figure{
-	float: none;
+	float: none;;
   }
 
 /* JavaScipt or meia-query dependent styles */
+@media screen and (min-width: 500px){
+	#gallery li {
+		width: 47vw; /*(100% - 6*1 of margin) / 2 = 47*/
+	}
+}
+
 @media screen and (min-width: 600px){
 	#gallery li {
-		width: 23.3333%; /*(100% - 6*5% of margin) / 3 = 23.3333*/
+		width: 30.66666vw; /*(100% - 8*1 of margin) / 3 = 30.666666*/
 	}
 }
 @media screen and (min-width: 900px){
 	#gallery li {
-			width: 15%; /*(100% - 8*5% of margin) / 4 = 15*/
-		}
+		width: 22.5vw; /*(100% - 10*1 of margin) / 4 = 22.5*/
+	}
 }
 /* Responsive Images */
