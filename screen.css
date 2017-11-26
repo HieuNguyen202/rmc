@@ -74,17 +74,9 @@ img{
 h1{
 	font-family: 'Lobster', cursive;
 	font-size: 1.5em; /* 27px / 18px = 1.5(Ratio perfect fifth)*/
-	padding-bottom: 0.8148em; /*22px / 27px = 0.8148*/
+	line-height: 1.2222em; /* 33px / 27px = 1.2222*/
 	color: #f3e800; /*yellow*/
 
-}
-h2{
-	color: #C63D0F; /*orange red*/
-	font-family: 'Lobster', cursive;
-	font-size: 2.25em; /*40.5px/18px = 2.25*/
-	line-height: 1em;
-	padding: 1.0864em; /*44px/40.5px = 1.0864*/
-	text-align: center;
 }
 
 /*Layouts*/
@@ -118,6 +110,9 @@ body section{
 	padding-left: 1vw;
 	padding-right: 1vw;
 }
+#gallery li figure figcaption p{
+	padding-bottom: 0.4074em; /* 11px/27px = 0.4074*/
+}
 
 #gallery li figure a img{
 	transition: .1s ease;
@@ -135,6 +130,7 @@ body section{
 	 color: #C63D0F; /*orange brown*/
 	 padding-top: 0.8148em; /* 22px/27px = 0.8148*/
 	 padding-bottom: 0.4074em; /* 11px/27px = 0.4074*/
+
  }
 
 /* State Styles */
