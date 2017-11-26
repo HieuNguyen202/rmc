@@ -114,6 +114,10 @@ body section{
 #gallery li figure{
 
 }
+#gallery li figure figcaption{
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
 
 #gallery li figure a img{
 	transition: .1s ease;
