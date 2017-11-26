@@ -144,6 +144,27 @@ body section{
 	float: none;;
   }
 
+	/*Tet*/
+#events{
+		position: absolute;
+		left: 30%;
+		}
+#events::before{
+	content: "";
+	position: absolute;
+	left: -50px;
+	width: 3px;
+	height: 100%;
+	background: #c0392b;
+	}
+
+	#events li{
+		list-style: circle;
+		list-style-position:outside;
+		margin: 5%;
+		background-color: brown;
+	}
+
 /* JavaScipt or meia-query dependent styles */
 @media screen and (min-width: 500px){
 	#gallery li {
