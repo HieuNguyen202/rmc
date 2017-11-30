@@ -144,26 +144,88 @@ body section{
 	float: none;;
   }
 
+	/*<figure class="timeline-mark">
+		<img src="images/xoi.jpg" alt="Image of xoi">
+	</figure>
+	<section class="timeline-date">
+		23/12
+	</section>
+	<section class="timeline-content">
+		<h1>Header of this seciton</h1>
+		<p>Tết ([tet˧˥] or [tɜːt˧˥]), or Vietnamese New Year, is the most
+		important celebration in Vietnamese culture. The word is a shortened
+		form of Tết Nguyên Đán, which is Sino-Vietnamese for "Feast of the First
+		Morning of the First Day". Tết celebrates the arrival of spring based on
+		the Vietnamese calendar, which usually has the date falling in January
+		or February.[1]</p>
+	</section>*/
+
+
 	/*Tet*/
 #events{
-		position: absolute;
-		left: 30%;
-		}
-#events::before{
-	content: "";
+	/*display: block;*/
 	position: absolute;
-	left: -50px;
-	width: 3px;
-	height: 100%;
-	background: #c0392b;
+	}
+#events::before{
+	/*Vertical line*/
+	content: '';
+  position: absolute;
+  top: 0;
+  left: 5%;
+  height: 100%;
+  width: 3px;
+  background: #d7e4ed;
+	}
+.timeline-block{
+	clear: both;
+	display: block;
+}
+
+.timeline-content{
+	list-style: none;
+	position: relative;
+	background-color: #d7e4ed;
+	left: 10%;
+	width: 80%;
 	}
 
-	#events li{
-		list-style: circle;
-		list-style-position:outside;
-		margin: 5%;
-		background-color: brown;
+.timeline-content::before{
+	/*Arrow*/
+	content: '';
+  position: relative;
+  top: 16px;
+	left: -13px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #d7e4ed;
 	}
+
+.timeline-mark{
+	position: relative;
+	transform: translateX(-50%);
+	top: 65px;
+	width: 30px;
+	height: 30px;
+	left: 5%;
+	}
+
+.timeline-mark img{
+	/*border: 3px solid white;*/
+	border-radius: 50%;
+}
+
+.timeline-date{
+	position: relative;
+	width: 50px;
+	/*transform: translateX(-50%);*/
+	/*top: 16px;
+	width: 30px;
+	height: 30px;
+	left: 5%;*/
+	}
+
+
 
 /* JavaScipt or meia-query dependent styles */
 @media screen and (min-width: 500px){
