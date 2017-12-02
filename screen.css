@@ -174,18 +174,21 @@ body section{
   left: 5%;
   height: 100%;
   width: 3px;
-  background: #d7e4ed;
+  background: white;
 	}
+
 .timeline-block{
+	position: relative;
 	clear: both;
 	display: block;
+	margin-bottom: 10%;
 }
 
 .timeline-content{
 	list-style: none;
 	position: relative;
 	background-color: #d7e4ed;
-	left: 10%;
+	left: 15%;
 	width: 80%;
 	}
 
@@ -202,22 +205,21 @@ body section{
 	}
 
 .timeline-mark{
-	position: relative;
-	transform: translateX(-50%);
-	top: 65px;
-	width: 30px;
-	height: 30px;
-	left: 5%;
+	position:absolute;
+	top: 0;
+	left: 20px;;
+	/*transform: translateY(50%);*/
+	width: 5%;
 	}
 
 .timeline-mark img{
-	/*border: 3px solid white;*/
+	border: 3px solid white;
 	border-radius: 50%;
 }
 
 .timeline-date{
 	position: relative;
-	width: 50px;
+	width: 40px;
 	/*transform: translateX(-50%);*/
 	/*top: 16px;
 	width: 30px;
