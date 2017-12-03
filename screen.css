@@ -101,19 +101,23 @@ nav ul li a{
 	color: black;
 	display: block;
 	text-align: center;
+	text-decoration:inherit;
 	background-color: orange;
 	/*border-bottom-left-radius: 22px;*/
 	/*border-bottom-right-radius: 22px;*/
-
 }
 
 nav ul li a:hover{
 	background-color: green; /*grey*/
+	text-decoration:inherit;
 }
 
-nav ul li a:visited{
-	text-decoration: none;
+.active{
+	color: white;
 }
+
+
+
 
 
 
