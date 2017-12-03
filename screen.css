@@ -222,7 +222,12 @@ body section{
 
 .timeline-date{
 	position: relative;
-	width: 40px;
+	line-height: 2.4444444444em; /*44px / 18px = 2.4444444444*/
+	width: 3.6666666667em;/*66px / 18px = 3.6666666667*/
+	height: 2.4444444444em;/*44px / 18px = 2.4444444444*/
+	background-color: red;
+	border-radius: 5px;
+	text-align: center;
 	/*transform: translateX(-50%);*/
 	/*top: 16px;
 	width: 30px;
