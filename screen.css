@@ -63,9 +63,9 @@ html {
 body{
 	font-family: 'Cuprum', sans-serif;
 	line-height: 1.22222em; /*22px / 18px = 1.22222*/
-	background-color: #696969;
+	background-color: #696969; /*grey*/
+
 	color: black;
-	border-bottom: 10px solid orange;
 }
 img{
 	display: block;
@@ -142,6 +142,11 @@ h1{
 #events{
 	/*display: block;*/
 	position: relative;
+	padding-top: 44px;
+	padding-bottom: 11px;
+	margin-top: 22px;
+	margin-bottom: 22px;
+
 	}
 #events::before{
 	/*Vertical line*/
@@ -149,10 +154,15 @@ h1{
   position: absolute;
   top: 0;
   left: 44px;
+	/*width: 4px;*/
+	width: calc(100% - 44px);
+	border: 4px solid orange;
+	border-right: none;
+	border-top-left-radius: 22px;
+	border-bottom-left-radius: 22px;
   height: 100%;
-  width: 4px;
 	transform: translateX(-2px); /*-1/2 of width*/
-  background: orange;
+  background: none;
 	}
 
 .timeline-block{
@@ -162,11 +172,12 @@ h1{
 	margin-bottom: 22px;
 }
 
+
 .timeline-content{
 	list-style: none;
 	position: relative;
 	width: calc(100% - 2*11px - 90px - 40px); /*100% - 2*padding - left - desired right gap*/
-	left: 90px;
+	left: 88px;
 	padding: 11px;
 	border-radius: 10px;
 	background-color: white;
@@ -193,10 +204,10 @@ h1{
 	left: 44px;
 	top: 44px; /*Must be equal to .timeline-content::before's top*/
 	transform: translate(-26px, -22px); /*-1/2 of width - border, -1/2 of height*/
-	color: orange
-	background-color: orange;
-	background-image: url("images/banh1.jpg");
-	background-size: contain;
+	color: orange;
+	background-color: #696969; /*grey*/
+	/*background-image: url("images/banh1.jpg");*/
+	/*background-size: contain;*/
 	border: 4px solid orange;
 	border-radius: 50%;
 	text-align: center;
