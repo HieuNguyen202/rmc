@@ -164,14 +164,14 @@ body section{
 	/*Tet*/
 #events{
 	/*display: block;*/
-	position: absolute;
+	position: relative;
 	}
 #events::before{
 	/*Vertical line*/
 	content: '';
   position: absolute;
   top: 0;
-  left: 5%;
+  left: 40px;
   height: 100%;
   width: 3px;
   background: white;
@@ -181,35 +181,38 @@ body section{
 	position: relative;
 	clear: both;
 	display: block;
-	margin-bottom: 10%;
+	margin-bottom: 22px;
 }
 
 .timeline-content{
 	list-style: none;
 	position: relative;
+	width: calc(100% - 2*11px - 90px - 40px); /*100% - 2*padding - left - desired right gap*/
+	left: 90px;
+	padding: 11px;
+	border-radius: 10px;
 	background-color: #d7e4ed;
-	left: 15%;
-	width: 80%;
 	}
 
 .timeline-content::before{
-	/*Arrow*/
+	/*Arrows*/
 	content: '';
-  position: relative;
-  top: 16px;
-	left: -13px;
+  position: absolute;
+	width: 0;
   height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-right: 7px solid #d7e4ed;
+  top: 35px; /*Must be equal to timeline-mark's top*/
+	left: -20px;
+  border: 10px solid transparent; /*Arrow height*/
+  border-right: 10px solid #d7e4ed; /*Arrow width*/
+	transform: translateY(-5px); /*-1/2 of arrow height*/
 	}
 
 .timeline-mark{
 	position:absolute;
-	top: 0;
-	left: 20px;;
-	/*transform: translateY(50%);*/
-	width: 5%;
+	width: 40px;
+	left: 40px;
+	top: 35px; /*Must be equal to .timeline-content::before's top*/
+	transform: translate(-20px, -20px); /*-1/2 of width, -1/2 of height*/
 	}
 
 .timeline-mark img{
