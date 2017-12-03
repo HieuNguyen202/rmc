@@ -79,6 +79,42 @@ h1{
 	line-height: 1.2222em; /* 33px / 27px = 1.2222*/
 	color: #C63D0F; /*orange brown*/
 }
+nav{
+
+}
+
+nav ul li{
+	float: right;
+	width: 20%;
+	min-width: 100px;
+	/*padding-left: 4px;*/
+}
+#home{
+	float: left;
+	width: 10%;
+	padding-left: 0;
+}
+
+nav ul li a{
+	height: 44px;
+	line-height: 44px;
+	color: black;
+	display: block;
+	text-align: center;
+	background-color: orange;
+	/*border-bottom-left-radius: 22px;*/
+	/*border-bottom-right-radius: 22px;*/
+
+}
+
+nav ul li a:hover{
+	background-color: green; /*grey*/
+}
+
+nav ul li a:visited{
+	text-decoration: none;
+}
+
 
 
 /* Modular Styles */
@@ -136,30 +172,29 @@ h1{
 	float: none;;
   }
 
-
-
 	/*Tet*/
 #events{
-	/*display: block;*/
 	position: relative;
+	clear: both;
+	top: 44px;
 	padding-top: 44px;
 	padding-bottom: 11px;
 	margin-top: 22px;
 	margin-bottom: 22px;
-
 	}
+
 #events::before{
 	/*Vertical line*/
 	content: '';
   position: absolute;
   top: 0;
   left: 44px;
-	/*width: 4px;*/
-	width: calc(100% - 44px);
+	left:0;
+	width: 44px;
 	border: 4px solid orange;
-	border-right: none;
-	border-top-left-radius: 22px;
-	border-bottom-left-radius: 22px;
+	border-left: none;
+	border-top-right-radius: 22px;
+	border-bottom-right-radius: 22px;
   height: 100%;
 	transform: translateX(-2px); /*-1/2 of width*/
   background: none;
@@ -221,11 +256,6 @@ h1{
 	background-color: orange;
 	border-radius: 5px;
 	text-align: center;
-	/*transform: translateX(-50%);*/
-	/*top: 16px;
-	width: 30px;
-	height: 30px;
-	left: 5%;*/
 	}
 
 
