@@ -59,6 +59,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+	overflow-x: hidden;
 }
 body{
 	font-family: 'Cuprum', sans-serif;
@@ -129,24 +130,24 @@ nav ul li a:hover{
 #gallery{
 	position: relative;
 	clear: both;
-	top: 1vw;
-	margin: 1vw; /* 5.5px/27px = 0.2037*/
-	margin-bottom: 2vw; /* 5.5px/27px = 0.2037*/
+	top: 22px;
+	margin: 11px;
+	margin-bottom: 44px;
 }
 
 #gallery li {
 	float: left;
-	margin: 1vw; /* 5.5px/27px = 0.2037*/
+	margin: 11px;
 	background-color: white;
-	border-bottom: 10px orange solid;
+	border-bottom: 11px orange solid;
 }
 
 #gallery li figure{
 
 }
 #gallery li figure figcaption{
-	padding-left: 1vw;
-	padding-right: 1vw;
+	padding-left: 11px;
+	padding-right: 11px;
 }
 #gallery li figure figcaption p{
 	padding-bottom: 0.4074em; /* 11px/27px = 0.4074*/
@@ -176,8 +177,8 @@ nav ul li a:hover{
 	flex-wrap: wrap;
 }
 
-.flexbox #gallery li figure{
-	float: none;;
+.flexbox #gallery li{
+	float: none;
   }
 
 	/*Tet*/
@@ -271,18 +272,18 @@ nav ul li a:hover{
 /* JavaScipt or meia-query dependent styles */
 @media screen and (min-width: 450px){
 	#gallery li {
-		width: 47vw; /*(100% - 6*1 of margin) / 2 = 47*/
+		width: calc((100% - 4*11px)/2); /*(100% - 6*1 of margin) / 2 = 47*/
 	}
 }
 
 @media screen and (min-width: 675px){
 	#gallery li {
-		width: 30.66666vw; /*(100% - 8*1 of margin) / 3 = 30.666666*/
+		width: calc((100% - 6*11px)/3); /*(100% - 8*1 of margin) / 3 = 30.666666*/
 	}
 }
 @media screen and (min-width: 1000px){
 	#gallery li {
-		width: 22.5vw; /*(100% - 10*1 of margin) / 4 = 22.5*/
+		width: calc((100% - 8*11px)/4); /*(100% - 10*1 of margin) / 4 = 22.5*/
 	}
 }
 /* Responsive Images */
