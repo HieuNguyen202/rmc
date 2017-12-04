@@ -247,7 +247,7 @@ nav ul li a:hover{
 	height: 44px;
 	left: 44px;
 	top: 44px; /*Must be equal to .timeline-content::before's top*/
-	transform: translate(-26px, -22px); /*-1/2 of width - border, -1/2 of height*/
+	transform: translate(-26px, -24px); /*-1/2 of width - border, -1/2 of height*/
 	color: orange;
 	background-color: #696969; /*grey*/
 	/*background-image: url("images/banh1.jpg");*/
