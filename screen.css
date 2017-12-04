@@ -233,7 +233,7 @@ nav ul li a:hover{
 	width: 0;
   height: 0;
   top: 44px; /*Must be equal to timeline-mark's top*/
-	left: -20px;
+	left: -18px;
   border: 10px solid transparent; /*Arrow height*/
   border-right: 10px solid white; /*Arrow width*/
 	transform: translateY(-10px); /*- arrow height*/
@@ -269,18 +269,18 @@ nav ul li a:hover{
 
 
 /* JavaScipt or meia-query dependent styles */
-@media screen and (min-width: 500px){
+@media screen and (min-width: 450px){
 	#gallery li {
 		width: 47vw; /*(100% - 6*1 of margin) / 2 = 47*/
 	}
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 675px){
 	#gallery li {
 		width: 30.66666vw; /*(100% - 8*1 of margin) / 3 = 30.666666*/
 	}
 }
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1000px){
 	#gallery li {
 		width: 22.5vw; /*(100% - 10*1 of margin) / 4 = 22.5*/
 	}
