@@ -235,8 +235,6 @@ nav ul li a:hover{
 	display: block;
 	margin-bottom: 22px;
 }
-
-
 .timeline-content{
 	position: relative;
 	width: calc(100% - 2*11px - 90px - 40px); /*100% - 2*padding - left - desired right gap*/
@@ -249,11 +247,9 @@ nav ul li a:hover{
 .timeline-content h1{
 	padding-bottom: 0.8148148148em; /*22px / 27px = 0.8148148148*/
 	}
-
 .timeline-content p {
 	padding-bottom: 1.22222em; /*22px / 18px = 1.22222em*/
 	}
-
 .timeline-content::before{
 	/*Arrows*/
 	content: '';
@@ -303,7 +299,6 @@ nav ul li a:hover{
 		border-radius: 5px;
 		text-align: center;
 		}
-
 
 
 @media screen and (min-width: 376px){
@@ -384,7 +379,6 @@ nav ul li a:hover{
 			width: 40%;
 			position: relative;
 			border-radius: 11px;
-
 			}
 
 		.timeline-mark{
