@@ -49,9 +49,6 @@ table {
 /* End reset CSS code */
 
 /* Start custom CSS */
-/* Base */
-/* Simple, HTML/element selectors */
-/* Typographic styles; colors; spacing (above and below) */
 html {
 	font-size: 1.125em; /*18px / 16px = 1.125*/
 	text-rendering:optimizeLegibility;
@@ -65,13 +62,7 @@ body{
 	font-family: 'Cuprum', sans-serif;
 	line-height: 1.22222em; /*22px / 18px = 1.22222*/
 
-	/*Background source: http://lea.verou.me/css3patterns/*/
-	background-color: hsl(2, 57%, 40%);
-	background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-	repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-	repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
-
-	/*background-image: url("images/background.jpg");*/
+	background-color: grey;
 	color: black;
 }
 img{
@@ -110,7 +101,6 @@ h1{
 	border-bottom: 5px solid rgba(255, 167, 0, 1);
 	border-top: 5px solid rgba(255, 167, 0, 1);
 	margin-bottom: 5.5px;
-	/*background-color: rgba(255, 167, 0, 0.4);*/
 }
 
 #home-tab{
@@ -145,9 +135,7 @@ nav ul li a:hover{
 }
 
 /* Modular Styles */
-/*
-  Class selectors, sometimes descendent/child selectors,
-	repeating styles throughout a site/page*/
+
 
 #gallery{
 	position: relative;
@@ -277,10 +265,7 @@ nav ul li a:hover{
 		text-align: center;
 
 		/*Background source: http://lea.verou.me/css3patterns/*/
-		background-color: hsl(2, 57%, 40%);
-		background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-		repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-		repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+		background-color: grey;
 
 		}
 
@@ -318,8 +303,8 @@ nav ul li a:hover{
 	}
 @media screen and (min-width: 675px){
 	#gallery li {
-		width: calc((100% - 6*11px)/3);
-		/*(100% - 8*1 of margin) / 3 = 30.666666*/
+		width: calc((100% - 6*11px)/3); /*(100% - 8*1 of margin) / 3 = 30.666666*/
+
 	}
 }
 
