@@ -103,9 +103,45 @@ h1{
 }
 
 #home_tab{
+
 	float: left;
 	width: 10%;
 	padding-left: 0;
+}
+#menu{
+	clear: both;
+	margin: 22px;
+	background-color: RGB(254,235,230)
+}
+.food_group{
+	clear: both;
+}
+.group_name{
+	background-color: RGB(229,50,125);
+	color: white;
+	text-align: center;
+}
+.dish_list li{
+	clear: both;
+	list-style-type: decimal;
+	list-style-position:inside;
+	padding: 5.5px;
+	padding-left: 11px;
+	padding-right: 11px;
+
+}
+
+.dish_name{
+	display: inline;
+}
+.dish_desc{
+	font-size: 0.75em;
+	margin-left: 5.5px;
+	display: inline;
+}
+.dish_price{
+	float: right;
+	color: RGB(54,89,46);
 }
 
 nav ul li{
